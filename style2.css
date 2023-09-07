@@ -1,0 +1,74 @@
+body {
+    background-color: #05192d;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+;
+    /* background-color: #000000;
+    background-image: url("https://www.transparenttextures.com/patterns/hexellence.png"); */
+
+
+
+    /* background-color: #05192d; */
+    padding: 3rem;
+}
+
+#container {
+    height: 400px;
+    width: 300px;
+    border: 1px solid #7933ff;
+    position: relative; 
+    border-radius: 10px;
+    color: #7933ff;
+}
+
+#label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    height: 10px;
+    width: 90px;
+    border: 1px solid #05192d;
+    background-color: #05192d;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#content {
+    padding-left: 10px;
+    color: white;
+}
+
+#pink {
+
+    border: .25em solid #7a33ffaf;
+    /* border: .25em solid rgb(217, 176, 255); */
+    padding: 1em 3em;
+    color: #7933ff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(100, 61, 136, 0);
+    border-radius: 1em;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+}
+   
+
+#pink:hover {
+    border: .25em solid rgb(217, 176, 255);
+    padding: 1em 3em;
+    color: rgb(217, 176, 255);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(100, 61, 136);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .1em rgb(217, 176, 255),
+           0 0 2em .8em rgba(191, 123, 255, 0.781),
+           inset 0 0 .75em .25em rgb(217, 176, 255);
+    box-shadow: 0 0 1em .25em rgb(217, 176, 255),
+           0 0 4em 1em rgba(191, 123, 255, 0.781),
+           inset 0 0 .75em .25em rgb(217, 176, 255);
+    text-shadow: 0 0 .8em rgb(217, 176, 255);
+    position: relative;
+    transition: all 0.3s;
+}

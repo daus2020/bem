@@ -1,0 +1,83 @@
+body {
+    background-color: #05192d;
+    padding: 3rem;
+}
+
+#container {
+    height: 100px;
+    width: 300px;
+    border: 1px solid #7933ff;
+    position: relative;
+    border-radius: 10px;
+    color: #7933ff;
+}
+
+#label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    height: 10px;
+    width: 90px;
+    border: 1px solid #05192d;
+    background-color: #05192d;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#content {
+    padding-left: 10px;
+    color: white;
+}
+
+button {
+    /* --glow-color: rgb(217, 176, 255)
+    --glow-spread-color: rgba(191, 123, 255, 0.781) */
+    /* --enhanced-glow-color: rgb(231, 206, 255) */
+    /* --btn-color: rgb(100, 61, 136) */
+    border: .25em solid rgb(217, 176, 255);
+    padding: 1em 3em;
+    color: rgb(217, 176, 255);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(100, 61, 136);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .1em rgb(217, 176, 255),
+           0 0 2em .8em rgba(191, 123, 255, 0.781),
+           inset 0 0 .75em .25em rgb(217, 176, 255);
+    /* box-shadow: 0 0 1em .25em rgb(217, 176, 255),
+           0 0 4em 1em rgba(191, 123, 255, 0.781),
+           inset 0 0 .75em .25em rgb(217, 176, 255); */
+    text-shadow: 0 0 .5em rgb(217, 176, 255);
+    position: relative;
+    transition: all 0.3s;
+}
+   
+/* button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(191, 123, 255, 0.781); */
+    /* filter: blur(2em); */
+    /* opacity: .7; */
+    /* transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+} */
+   
+button:hover {
+    color: rgb(100, 61, 136);
+    background-color: rgb(217, 176, 255);
+    box-shadow: 0 0 1em .25em rgb(217, 176, 255),
+           0 0 4em 2em rgba(191, 123, 255, 0.781),
+           inset 0 0 .75em .25em rgb(217, 176, 255);
+}
+   
+/* button:active {
+    box-shadow: 0 0 0.6em .25em rgb(217, 176, 255),
+           0 0 2.5em 2em rgba(191, 123, 255, 0.781),
+           inset 0 0 .5em .25em rgb(217, 176, 255);
+}
+    */
