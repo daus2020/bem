@@ -1,58 +1,65 @@
 body {
-    background-color: #05192d;
-    padding: 3rem;
+  background-color: #99b6d4;
+  padding: 3rem;
+  background: conic-gradient(
+    from 135deg at 50% 50%,
+    rgba(0, 0, 0, 1),
+    rgba(59, 85, 200, 1)
+  );
+  text-align: center;
+  background-attachment: fixed;
 }
 
 #container {
-    height: 100px;
-    width: 300px;
-    border: 1px solid #7933ff;
-    position: relative;
-    border-radius: 10px;
-    color: #7933ff;
+  height: 100px;
+  width: 300px;
+  border: 1px solid #7933ff;
+  position: relative;
+  border-radius: 10px;
+  color: #7933ff;
 }
 
 #label {
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    height: 10px;
-    width: 90px;
-    border: 1px solid #05192d;
-    background-color: #05192d;
-    text-align: center;
-    border-radius: 20px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  height: 10px;
+  width: 90px;
+  border: 1px solid #05192d;
+  background-color: #05192d;
+  text-align: center;
+  border-radius: 20px;
 }
 
 #content {
-    padding-left: 10px;
-    color: white;
+  padding-left: 10px;
+  color: white;
 }
 
 button {
-    /* --glow-color: rgb(217, 176, 255)
+  /* --glow-color: rgb(217, 176, 255)
     --glow-spread-color: rgba(191, 123, 255, 0.781) */
-    /* --enhanced-glow-color: rgb(231, 206, 255) */
-    /* --btn-color: rgb(100, 61, 136) */
-    border: .25em solid rgb(217, 176, 255);
-    padding: 1em 3em;
-    color: rgb(217, 176, 255);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: rgb(100, 61, 136);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em .1em rgb(217, 176, 255),
-           0 0 2em .8em rgba(191, 123, 255, 0.781),
-           inset 0 0 .75em .25em rgb(217, 176, 255);
-    /* box-shadow: 0 0 1em .25em rgb(217, 176, 255),
+  /* --enhanced-glow-color: rgb(231, 206, 255) */
+  /* --btn-color: rgb(100, 61, 136) */
+  border: 0.25em solid rgb(217, 176, 255);
+  padding: 1em 3em;
+  color: rgb(217, 176, 255);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(100, 61, 136);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.1em rgb(217, 176, 255),
+    0 0 2em 0.8em rgba(191, 123, 255, 0.781),
+    inset 0 0 0.75em 0.25em rgb(217, 176, 255);
+  /* box-shadow: 0 0 1em .25em rgb(217, 176, 255),
            0 0 4em 1em rgba(191, 123, 255, 0.781),
            inset 0 0 .75em .25em rgb(217, 176, 255); */
-    text-shadow: 0 0 .5em rgb(217, 176, 255);
-    position: relative;
-    transition: all 0.3s;
+  text-shadow: 0 0 0.5em rgb(217, 176, 255);
+  position: relative;
+  transition: all 0.3s;
 }
-   
+
 /* button::after {
     pointer-events: none;
     content: "";
@@ -62,22 +69,71 @@ button {
     height: 100%;
     width: 100%;
     background-color: rgba(191, 123, 255, 0.781); */
-    /* filter: blur(2em); */
-    /* opacity: .7; */
-    /* transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+/* filter: blur(2em); */
+/* opacity: .7; */
+/* transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
 } */
-   
+
 button:hover {
-    color: rgb(100, 61, 136);
-    background-color: rgb(217, 176, 255);
-    box-shadow: 0 0 1em .25em rgb(217, 176, 255),
-           0 0 4em 2em rgba(191, 123, 255, 0.781),
-           inset 0 0 .75em .25em rgb(217, 176, 255);
+  color: rgb(100, 61, 136);
+  background-color: rgb(217, 176, 255);
+  box-shadow: 0 0 1em 0.25em rgb(217, 176, 255),
+    0 0 4em 2em rgba(191, 123, 255, 0.781),
+    inset 0 0 0.75em 0.25em rgb(217, 176, 255);
 }
-   
+
 /* button:active {
     box-shadow: 0 0 0.6em .25em rgb(217, 176, 255),
            0 0 2.5em 2em rgba(191, 123, 255, 0.781),
            inset 0 0 .5em .25em rgb(217, 176, 255);
 }
     */
+
+.incomplete-border {
+  width: 200px; /* Set the width of the rectangle */
+  height: 100px; /* Set the height of the rectangle */
+  background-color: #ffffff; /* Set the background color of the rectangle */
+  border: 2px solid transparent; /* Set a transparent border with a 2px width */
+  position: relative;
+}
+
+.incomplete-border:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%; /* Set the width of the incomplete border to 80% */
+  height: 100%;
+  border: 2px solid #6d0000; /* Set the color of the incomplete border */
+}
+
+.incomplete-box {
+  border: solid 1px #fff;
+  border-top: none;
+  /* border-right: none; */
+  width: 300px;
+  height: 350px;
+  position: relative;
+  color: aqua;
+  padding: 1rem;
+}
+.incomplete-box::after,
+.incomplete-box::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  /* height: 25%; */
+  height: 1px;
+  /* width: 1px; */
+  background-color: #fff;
+  top: 0;
+  /* right: 0; */
+}
+.incomplete-box::after {
+  left: 0;
+  /* top: 0; */
+}
+.incomplete-box::before {
+  right: 0;
+  /* bottom: 0; */
+}
